@@ -87,25 +87,25 @@
      id="layer1">
     <text
        xml:space="preserve"
-       transform="matrix(0.26297165,0,0,0.2641209,0.35350089,1.6455872)"
+       transform="matrix(0.26297165,0,0,0.2641209,0.35350089,-2.058579)"
        id="text23"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:86px;font-family:TatianaCTT;-inkscape-font-specification:TatianaCTT;text-align:start;white-space:pre;shape-inside:url(#rect23);display:inline;opacity:1;fill:#1a1a1a;fill-opacity:0.391386;stroke:none;stroke-width:1.89684;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:1.89684, 11.3811;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:86px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;white-space:pre;shape-inside:url(#rect23);display:inline;opacity:1;fill:#1a1a1a;fill-opacity:0.391386;stroke:none;stroke-width:1.89684;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:1.89684, 11.3811;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
        x="-196.14575"
        y="0"
        inkscape:label="logo_copy"><tspan
          x="2.5878906"
-         y="74.583207"
-         id="tspan2">Главная</tspan></text>
+         y="82.826172"
+         id="tspan1">Главная</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.15714137,0.49826977)"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.15714137,-3.2058964)"
        id="text1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:TatianaCTT;-inkscape-font-specification:TatianaCTT;text-align:start;white-space:pre;shape-inside:url(#rect1);display:inline;opacity:1;fill:#57412d;fill-opacity:1;stroke:none;stroke-width:0.999685;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:0.999685, 5.99811;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;white-space:pre;shape-inside:url(#rect1);display:inline;opacity:1;fill:#57412d;fill-opacity:1;stroke:none;stroke-width:0.999685;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:0.999685, 5.99811;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
        x="-196.14575"
        y="0"
        inkscape:label="logo_orig"><tspan
          x="2.5878906"
-         y="74.034447"
-         id="tspan3">Главная</tspan></text>
+         y="82.213509"
+         id="tspan2">Главная</tspan></text>
   </g>
 </svg>

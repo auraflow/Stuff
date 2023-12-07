@@ -6,19 +6,17 @@ html {
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'MakiSans';
-    src: url(../font/MakiSans.ttf);
-}
-
-body {
-    /* background-color: #d6b381; */
-    background: url(../img/cookies-bg.jpg) no-repeat;
-    background-size: cover;
+#body {
     padding-top: 20px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    opacity: 100;
+}
+
+.body-animated {
+    border-radius: 0%;
 }
 
 .header-1 {
@@ -60,15 +58,44 @@ a {
     color: #57412d;
     text-decoration: none;
     font-size: 38px;
-    font-family: 'MakiSans';
 }
 
 .recipe-text {
+    width: 600px;
     text-align: center;
     color: #d6b381;
     text-decoration: none;
     font-size: 32px;
-    font-family: 'MakiSans';
+    line-height: 105%;
+    margin: 0 auto;
+}
+
+.congrat-centering {
+    width: 0px;
+    margin: 0 auto;
+}
+
+.congrat {
+    width: 1600px;
+    height: 260px;
+    border-radius: 20px;
+    background-color: rgba(87, 65, 45);
+    padding-top: 98px;
+    right: 800px;
+    position: relative;
+    opacity: 0%;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.congrat.scroll-anim {
+    opacity: 100%;
+}
+
+.congrat-text {
+    text-align: center;
+    color: #d6b381;
+    text-decoration: none;
+    font-size: 64px;
 }
 
 .section-1 {
@@ -193,7 +220,7 @@ a {
     height: 260px;
     border-radius: 20px;
     background-color: rgba(87, 65, 45);
-    padding-top: 98px;
+    padding-top: 66px;
     right: 800px;
     position: relative;
     opacity: 0%;
@@ -255,6 +282,7 @@ a {
     border-radius: 20px;
     background-color: #57412d;
     padding-top: 30px;
+    margin-bottom: 120px;
     right: 720px;
     position: relative;
     opacity: 0%;
