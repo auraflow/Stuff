@@ -7,19 +7,34 @@ document.addEventListener('DOMContentLoaded', () => {
         let windowCenter = (window.innerHeight / 2) + window.scrollY;
         console.log('WindowCenter: ', windowCenter);
 
-        let scrollOffset = window.scrollY + scrollItemForBackground.getBoundingClientRect().top;
+        let scrollOffsetBacground = window.scrollY + scrollItemForBackground.getBoundingClientRect().top;
         
-        const backgroundElement = document.getElementById("img-background");
+        const backgroundElement = document.getElementById('img-background');
 
-        console.log(scrollOffset);
+        var body = document.body,
+            html = document.documentElement;
+
+        docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+                              html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+        // console.log(scrollOffsetBacground);
         
-        if (windowCenter >= scrollOffset) {
+        // Появление бэкграунда при прокрутке
+        if (window.scrollY > 0) {
             backgroundElement.classList.add('background-anim');
         }
         else {
             backgroundElement.classList.remove('background-anim');
         }
 
+        // Движение фона за скролл баром
+        if (windowCenter >= scrollOffsetBacground) {
+            console.log(window.scrollY);
+
+            backgroundElement.style.backgroundPositionY = (-20 + (window.scrollY/docHeight)*20 + '%');
+        }
+
+        // Появление блоков
         scrollItems.forEach(el => {
             let scrollOffset = window.scrollY + el.getBoundingClientRect().top;
 
@@ -34,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
 
+        // Появление изображений
         scrollImg.forEach(el => {
             let scrollOffset = window.scrollY + el.getBoundingClientRect().top;
 
