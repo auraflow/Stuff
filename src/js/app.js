@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scrollItems = document.querySelectorAll('.scroll-item');
     const scrollImg = document.querySelectorAll('.scroll-img')
-    const scrollItemForBackground = document.querySelectorAll('.scroll-item')[1]
+    const scrollItemForBackground = document.querySelectorAll('.scroll-item')[0]
 
     const scrollAnimation = () => {
         let windowCenter = (window.innerHeight / 2) + window.scrollY;
@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let scrollOffset = window.scrollY + scrollItemForBackground.getBoundingClientRect().top;
         
-        const backgroundElement = document.getElementById("body");
+        const backgroundElement = document.getElementById("img-background");
 
         console.log(scrollOffset);
         
         if (windowCenter >= scrollOffset) {
-            backgroundElement.style.background = 'url(img/cookies-bg.jpg) no-repeat';
+            backgroundElement.classList.add('background-anim');
         }
         else {
-            backgroundElement.style.background = 'linear-gradient(rgba(241, 200, 141, 0.8), rgba(214, 178, 128, 0.1)) no-repeat';
+            backgroundElement.classList.remove('background-anim');
         }
 
         scrollItems.forEach(el => {
