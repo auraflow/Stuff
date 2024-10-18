@@ -1,0 +1,66 @@
+body {
+    background-color: #7A8C5E;
+    font-family: "Noto-sans", sans-serif;
+}
+
+.base-container {
+    padding: 8px 20px;
+    background-color: grey;
+    border: gray solid 2px;
+    border-radius: 6px;
+    display: flex;
+    line-height: 0.2;
+    margin-bottom: 20px;
+}
+
+.incase-container {
+    display: flexbox;
+}
+
+.php-server-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.php-db-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: table;
+    padding-right: 12px;
+}
+
+.top-logo {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.db-table {
+    margin: 0 auto;
+}
+
+.db-container {
+    margin-bottom: 40px;
+}
+
+th, td {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+th {
+    background: #7D7D7D;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    background: #B3B3B3;
+    font-size: 18px;
+}
+
+.db-image {
+    text-align: center;
+}
