@@ -1,0 +1,105 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.auth-container button {
+    background-color: #fcb884;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #fcb884;
+}
+
+.auth-container .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-container .register-link a {
+    color: #fcb884;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-container .register-link a:hover {
+    color: #fcb884;
+}
+
+.registration-link {
+    color: #ff8e3a;
+    text-decoration: none;
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+
+.registration-link:hover {
+    color: #ff8e3a;
+    opacity: 0.55;
+}
+
+.login-link {
+    color: #ff8e3a;
+    text-decoration: none;
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #ff8e3a;
+    opacity: 0.55;
+}
+
+.btn-custom {
+    background: linear-gradient(90deg, #ff8e3a, #e6bb20);
+    border: 0;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+    opacity: 0.8;
+}

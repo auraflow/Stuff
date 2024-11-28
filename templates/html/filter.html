@@ -1,0 +1,79 @@
+<section>
+    <div id="form-anchor"></div>
+    <div class="filter-block">
+        <!-- Здесь должна быть форма -->
+        <div class="container form-block">
+            <form action="", method="get" class="form-container">
+                <!-- СЛАЙДЕР С ЦЕНАМИ -->
+                <div class="cost-block__slider" id="range-block">
+                </div>
+                <div class="cost-block__label">
+                    <label class="cost__label">
+                        <span class="cost-text">от</span>
+                        <input type="number" name="mincost" class="filter-price__input" min="1" max="20000" placeholder="1" id="mincost-input" oninput="this.value = this.value.replace(/^0+(?=\d)/,'');">
+                        <span class="cost-text">₽</span>
+                    </label>
+                    <label class="cost__label">
+                        <span class="cost-text">до</span>
+                        <input type="number" name="maxcost" class="filter-price__input" min="1" max="20000" placeholder="20000" id="maxcost-input" oninput="this.value = this.value.replace(/^0+(?=\d)/,'');">
+                        <span class="cost-text">₽</span>
+                    </label>
+
+                    <!-- Название поля -->
+                    <select name="field-name" class="select-field__input form-select" id="fields">
+                        <!-- Default value -->
+                        <option value="0">Выберите поле</option>
+
+                        <!-- СПИСОК ПОЛЕЙ -->
+                        <option value="1">Поле №1</option>
+                        <option value="2">Поле №2</option>
+                        <option value="3">Поле №3</option>
+                        <option value="4">Поле №4</option>
+                        <option value="5">Поле №5</option>
+                        <option value="6">Поле №6</option>
+                        <option value="7">Поле №7</option>
+                        <option value="8">Поле №8</option>
+                        <option value="9">Поле №9</option>
+                        <option value="10">Поле №10</option>
+                    </select>
+
+                    <!-- Название растения -->
+                    <input name="plant-name" type="text" class="plant-name__input form-control" maxlength="70" placeholder="Введите название">
+                </div>
+
+                <!-- Принять фильтр или очистить -->
+                <div class="ended-operation col">
+                    <input value="Применить фильтр" name="accept-filter" type="submit" class="filter-accept__input">
+                    <a href="http://localhost/site_filter/#form-anchor" type="button" class="clear-filter__input">Очистить фильтр</a>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="container db-table__block">
+            <table class="db-table__table">
+                <thead class="db-table__head">
+                    <tr class="table-rows__head">
+                        <th class="table-head__element">Изображение</th>
+                        <th class="table-head__element">Название</th>
+                        <th class="table-head__element" id="table-field__cell">Поле</th>
+                        <th class="table-head__element" id="table-description__cell">Описание</th>
+                        <th class="table-head__element">Цена</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="db-table__body">
+                    <?php if (isset($_GET["accept-filter"])) {
+
+                        include 'core/filtered_output.php';
+
+                    } else {
+
+                        include 'core/unfiltered_output.php';
+
+                    } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
